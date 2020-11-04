@@ -10,8 +10,8 @@ driver.get("https://typing.works/")
 
 i = 0
 
-while i < 5:
-    time.sleep(1)
+while True:
+    time.sleep(0.1)
     text = driver.find_element_by_id('sing').get_attribute("innerHTML")
     ipt = driver.find_element_by_id('ipt')
 
@@ -19,4 +19,5 @@ while i < 5:
     time.sleep(0.1)
     ipt.send_keys(Keys.RETURN)
     i += 1
-    time.sleep(4)
+    time.sleep(0.5)
+
